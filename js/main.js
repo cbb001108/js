@@ -1,4 +1,4 @@
-onabort(window,'load',function(){
+on(window,'load',function(){
 
     var game=new Game();
 
