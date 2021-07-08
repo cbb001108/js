@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    //    var lilei={
+    //        sname:"li lei",
+    //        sage:11,
+    //        intr:function(){
+    //            console.log(`I'M ${this.sname} , I'M ${this.sage}`)
+    //        }
+    //    }
+    //    lilei.intr();
+    //    var hmm={
+    //        sname:"hmm",
+    //        sage:10,
+    //        intr:function(){
+    //         console.log(`I'M ${this.sname} , I'M ${this.sage}`)
+    //        }
+    //    }
+    //    hmm.intr();
+    function Student(sname,sage){
+        this.sname=sname,
+        this.sage=sage,
+        this.intr=function(){
+            console.log(`I'M ${this.sname} , I'M ${this.sage}`)
+        }
+    }
+    var lilei=new Student("li lie",11)
+    var hmm=new Student("hmm",11)
+    console.log(lilei)
+    console.log(hmm)
+   </script> 
+</body>
+</html>

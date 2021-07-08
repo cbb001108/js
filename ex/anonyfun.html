@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i=5;
+        var time1=setInterval(function(){
+         if(i!=0){
+             console.log(`1秒杀倒计时...${i}`);
+             i--;
+         }else{
+             console.log("结束");
+             clearInterval(time1)
+         }   
+        },1000);
+
+        var i=5;
+        var time2=setInterval(function(){
+            if(i!=0){
+             console.log(`2秒杀倒计时...${i}`);
+             i--;
+         }else{
+             console.log("结束");
+             clearInterval(time2)
+         }   
+        },1000)
+    </script>
+</body>
+</html>

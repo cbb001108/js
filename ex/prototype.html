@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Student(sname,sage){
+        this.sname=sname,
+        this.sage=sage    
+    }
+    // Student.prototype.intr=function(){
+    //         console.log(`I'M ${this.sname} , I'M ${this.sage}`)
+    //     }
+    Student.prototype.classname='初一2班';
+    // console.log(Student.prototype)
+    var lilei=new Student("li lie",11)
+    var hmm=new Student("hmm",11)
+    console.log(lilei)
+    console.log(hmm)
+
+    lilei.sname="li xiao lei "
+    console.log(lilei.sname)
+
+    lilei.classname="初二2班"
+    console.log(lilei.classname);
+    console.log(hmm.classname);
+
+    Student.prototype.classname="初二2班"
+    console.log(lilei.classname);
+    console.log(hmm.classname);
+    </script>
+</body>
+</html>
