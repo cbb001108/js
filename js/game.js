@@ -18,7 +18,7 @@ var Game=(function(){
     };
 
     Game.prototype={
-        setuo:function(){
+        setup:function(){
             this.view=new View();
             this.init();
         },
@@ -63,7 +63,7 @@ var Game=(function(){
         },
         initCell:function(){
             var index=-1;
-            for(var i=o;i<ROW;i++){
+            for(var i=0;i<ROW;i++){
                 data.cell[i]=[];
                 for(var j=0;j<COL;j++){
                     index++;
